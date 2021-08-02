@@ -4,7 +4,7 @@ export function fetchImages(page, count){
 
     return function(dispatch, getState){
         unsplash
-        .get(`/photos?page=${page}&per_page=${count}&client_id=MbMxmkTCMGwEY1GQGDl9Xlc4qwGH6himTTc0c0QdSSE`)
+        .get(`/photos?page=${page}&per_page=${count}&client_id=`)
         .then(response =>{
             console.log("____________________hoooray_______________", response)
             dispatch({
