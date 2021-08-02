@@ -12,16 +12,16 @@ class App extends React.Component {
   render(){
     return (
       <>
-        <header>
-            <Row rowInnerStyle={{width:"100%"}}>
-                <Column columnStyle={{width:"100%"}} columnInnerStyle="header">
+        <header style={{height: "75px",position: "fixed", width:"100%"}}>
+            <Row rowInnerStyle={{width:"100%", height : "100%"}}>
+                <Column columnStyle={{width:"100%", height : "100%"}} columnInnerStyle="header">
                     <h4>Logo</h4>
                     <h2>Image Inifinte</h2>
                     <h4>Exit</h4>
                 </Column>
             </Row>
         </header>
-        <section>
+        <section style={{marginTop:"75px"}}>
             <Images />
         </section>
       </>
